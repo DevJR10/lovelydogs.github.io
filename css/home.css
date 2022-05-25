@@ -56,3 +56,36 @@
    }
 }
 
+@media (max-width:412px){
+   .botoes-amiguinho{
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .botoes-amiguinho button{
+      padding: 10px 20px;
+   }
+}
+
+@media (max-width:370px){
+   .botoes-amiguinho{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .botoes-amiguinho button{
+      padding: 5px 15px;
+   }
+}
+
+@media (max-width:350px){
+   .botoes-amiguinho{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .botoes-amiguinho button{
+      padding: 5px 10px;
+   }
+}
+
