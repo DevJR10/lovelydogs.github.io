@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo-cliente.css">
+    <title>Cadastro</title>
+</head>
+<body>
+  <h1>Cadastro do Cliente</h1>
+    <div id="formulario">
+    <form method="post" action="formcliente.php">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label><br>
+          <input type="text" class="form-control" id="nome" name="nome">
+         </div>
+         <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label><br>
+            <input type="text" class="form-control" id="telefone" name="telefone">
+           </div>
+           <div class="mb-3">
+            <label for="CPF" class="form-label">CPF</label><br>
+            <input type="text" class="form-control" id="CPF" name="cpf">
+           </div>
+           <div class="mb-3">
+            <label for="email" class="form-label">Data de Nascimento</label><br>
+            <input type="date" class="form-control" id="nascimento" name="nascimento">
+           </div>
+           <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label><br>
+            <input type="email" class="form-control" id="email" name="email">
+           </div>
+           <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label><br>
+            <input type="password" class="form-control" id="senha" name="senha">
+           </div>
+
+        <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+</body>
+</html>

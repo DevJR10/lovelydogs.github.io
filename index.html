@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>LovelyDog</h1>
+
+            <nav id="lista-menu">
+               <ul>
+                  <a href="#home">Home</a>
+                  <a href="#sobre">Sobre nós</a>
+                  <a href="#">Adote</a>
+                  <a href="#">Contato</a>
+                  <a id="login-active" href="">Login &#10132;</a>
+               </ul>
+            </nav>
+
+            <a data-modal="abrir" class="login-cadastro" href="#" id="login-disabled">Login &#10132;</a>
+
+            <button class="active-mobile">Menu</button>
+        </div>
+    </header>
+
+    <main class="principal">
+        <div class="layout grid-padrao" id="home">
+            <div class="amiguinho">
+                <h1>Encontre um novo amigo para te fazer companhia.</h1>
+                <p>Somos uma plataforma intermediária que com parcerias de ONG'S, ajudamos você a encontrar um novo melhor amigo para alegrar o seu dia a dia.</p>
+                <button>Saiba mais</button>
+                <button>Contato</button>
+            </div>
+            <img src="imgs/undraw_relaxing_walk_mljx.svg" alt="">
+        </div>  
+    </main>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffd700" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,74.7C480,75,600,117,720,117.3C840,117,960,75,1080,90.7C1200,107,1320,181,1380,218.7L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+
+    <section class="sobre-nos o-que-somos" id="sobre">
+
+        <!-- <h2 class="titulo-sobre-nos">Sobre nós</h2> -->
+
+        <div class="grid-padrao sobre-grid">
+
+          <img src="imgs/dog curioso.jpg" alt="">
+           
+            <div class="sobre-texto o-que-somos-texto">
+               <h2>O que nós somos?</h2>
+               <p>Somos uma agregadora de ONG´S que tem como objetivo facilitar a adoção e facilitar a procura pelos animais. Sabemos que muitas pessoas não conhecem ou tem dificuldades de achar lugares e ONG´S que doem cachorros, por isso a nossa missão é levar esses cachorrinhos até você sem precisar se preocupar.</p>
+            </div>
+         </div>
+    </section>
+
+    <section class="sobre-nos" id="sobre">
+
+      <div class="grid-padrao sobre-grid porque-fazemos-isso">
+      
+          <div class="sobre-texto">
+             <h2>Por que fazemos isso?</h2>
+             <p>Nós sabemos o quanto de cachorrinhos estão em estado de abandono e situações de ruas, por isso, sentimos que o nosso dever é salvar a vida desses animais e levarmos alegrias para as pessoas com um novo companheiro(a). Além do mais, nós incentivamos a adoção de cachorros e não a compra deles.</p>
+          </div>
+
+          <img src="imgs/dog.fazemos-isso.jpg" alt="">
+       </div>
+  </section>
+
+  <section class="sobre-nos" id="sobre">
+
+   <div class="grid-padrao sobre-grid como-posso-adotar">
+   
+      <img src="imgs/dog como-adotar.jpg" alt="">
+
+       <div class="sobre-texto">
+          <h2>Como posso adotar?</h2>
+          <p>Para você adotar um novo amiguinho(a) é super simples, basta clicar no link abaixo, realizar o seu cadastro e escolher o seu novo companheiro(a). Após realizar tudo isso, você receberá mais informações sobre a adoção. <a class="quero-adotar" href="formcliente.html">Quero adotar!</a></p>
+       </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <button data-modal="fechar" class="fechar">X</button>
+          <form action="login.php" method="post">
+            <label for="email">Email</label>
+            <input type="text" for="email" id="email" name="email">
+            <label for="senha">Senha</label>
+            <input type="password" for="senha" id="senha" name="senha">
+            <div class="botoes-modal">
+               <button type="submit">Entrar</button>
+               <button type="submit"><a class="cadastrar-modal" href="formcliente.html">Cadastrar</a></button> 
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

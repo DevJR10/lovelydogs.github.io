@@ -1,0 +1,58 @@
+.principal{
+   position: relative;
+}
+
+.grid-padrao{
+   padding: 30px 15px;
+   max-width: 1100px;
+   margin: 50px auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   margin-bottom: 130px;
+}
+
+.amiguinho{
+   margin-right: 40px;
+}
+
+.amiguinho h1{
+   font-size: 3rem;
+}
+
+.amiguinho button{
+   margin-top: 30px;
+   background-color:#FBFB73 ;
+   padding: 15px 30px;
+   margin-right: 30px;
+   font-size: 1.07rem;
+   color: black;
+   font-family: 'Open Sans', sans-serif;
+   border-radius: 5px;
+}
+
+.layout h1{
+   margin:0 0 20px 0;
+   align-self: flex-end;
+}
+
+.layout p{
+   margin: 0;
+}
+
+.layout img{
+   width: 500px;
+   height: 400px;
+}
+
+@media (max-width:900px){
+   .layout{
+      margin-bottom: 110px;
+      grid-template-columns: 1fr;
+   }
+
+   .layout img{
+      display: none;
+   }
+}
+

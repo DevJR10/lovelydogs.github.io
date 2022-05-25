@@ -1,0 +1,13 @@
+/*Import das páginas*/
+@import 'header.css';
+@import 'geral.css';
+@import 'home.css';
+@import 'sobre.css';
+@import 'modal.css';
+
+/*Import das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
