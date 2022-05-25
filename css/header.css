@@ -26,13 +26,13 @@ header .login-cadastro{
    border: 1px solid yellow;
 }
 
-.active-mobile{
+/* .active-mobile{
    display: none;
 }
 
 #login-active{
    display: none;
-}
+} */
 
 @media (max-width:900px){
    .active-mobile{

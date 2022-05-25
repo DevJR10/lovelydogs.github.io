@@ -20,34 +20,34 @@ linksInternos.forEach((link) => {
 
 
 //Modal
-const botaoAbrir = document.querySelector('[data-modal="abrir"]');
-  const botaoFechar = document.querySelector('[data-modal="fechar"]');
-  const containerModal = document.querySelector('[data-modal="container"]');
+// const botaoAbrir = document.querySelector('[data-modal="abrir"]');
+//   const botaoFechar = document.querySelector('[data-modal="fechar"]');
+//   const containerModal = document.querySelector('[data-modal="container"]');
   
-  if(botaoAbrir && botaoFechar && containerModal) {
+//   if(botaoAbrir && botaoFechar && containerModal) {
     
-    function toggleModal(event) {
-      event.preventDefault();
-      containerModal.classList.toggle('ativo');
-    }
-    function cliqueForaModal(event) {
-      if(event.target === this) {
-        toggleModal(event);
-      }
-    }
+//     function toggleModal(event) {
+//       event.preventDefault();
+//       containerModal.classList.toggle('ativo');
+//     }
+//     function cliqueForaModal(event) {
+//       if(event.target === this) {
+//         toggleModal(event);
+//       }
+//     }
   
-    botaoAbrir.addEventListener('click', toggleModal);
-    botaoFechar.addEventListener('click', toggleModal);
-    containerModal.addEventListener('click', cliqueForaModal);
-  }
+//     botaoAbrir.addEventListener('click', toggleModal);
+//     botaoFechar.addEventListener('click', toggleModal);
+//     containerModal.addEventListener('click', cliqueForaModal);
+//   }
 
 
-  const botao = document.querySelector('.active-mobile')
-   const lista = document.querySelector('#lista-menu')
+//   const botao = document.querySelector('.active-mobile')
+//    const lista = document.querySelector('#lista-menu')
 
-   function abrirMenu(){
-      lista.classList.toggle('ativo')
-   }
+//    function abrirMenu(){
+//       lista.classList.toggle('ativo')
+//    }
 
-   botao.addEventListener('click', abrirMenu)
+//    botao.addEventListener('click', abrirMenu)
 
