@@ -14,31 +14,6 @@
    margin: 0 auto;
 }
 
-/* .titulo-sobre-nos{
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-}
-
-.titulo-sobre-nos::after{
-   content: '';
-   width: 20px;
-   height: 5px;
-   background-color: yellow;
-   display: inline-block;
-   margin-left: 7px;
-   margin-bottom: 4px;
-}
-
-.titulo-sobre-nos::before{
-   content: '';
-   width: 20px;
-   height: 5px;
-   background-color: yellow;
-   display: inline-block;
-   margin-right: 7px;
-   margin-bottom: 4px;
-} */
-
 .sobre-texto h2{
    font-weight: bold;
    font-family: 'Roboto', sans-serif;

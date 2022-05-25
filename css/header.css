@@ -30,9 +30,9 @@ header .login-cadastro{
    display: none;
 }
 
-/* #login-active{
+#login-active{
    display: none;
-}  */
+} 
 
 @media (max-width:900px){
    .active-mobile{
