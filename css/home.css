@@ -23,7 +23,7 @@
 .amiguinho button{
    margin-top: 30px;
    background-color:#FBFB73 ;
-   padding: 15px 30px;
+   padding: 12px 25px;
    margin-right: 30px;
    font-size: 1.07rem;
    color: black;
@@ -53,6 +53,20 @@
 
    .layout img{
       display: none;
+   }
+}
+
+@media(max-width:600px){
+   .amiguinho h1{
+      font-size: 2.2rem;
+   }
+
+   .amiguinho p{
+      font-size: 1.1rem;
+   }
+
+   .botoes-amiguinho button{
+      padding: 8px 20px;
    }
 }
 
