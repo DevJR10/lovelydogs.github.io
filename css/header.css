@@ -1,5 +1,5 @@
 header{
-   background-color: #FBFB73;
+   background-color: #FFB000;
 }
 
 header .menu{ 
@@ -11,28 +11,35 @@ header .menu{
    align-items: center;
 }
 
-header nav{
+.lista-menu ul{
    display: flex;
+   gap: 20px;
 }
 
 header a{
-   padding: 15px 15px;
+   box-sizing: border-box;
+   padding: 20px 0;
+   position: relative;
+   transition: width 0.3s;
 }
 
-header .login-cadastro{
-   font-size: 1rem;
-   padding: 0.62rem;
-   border-radius: 5px;
-   border: 1px solid yellow;
+header a::after{
+   content: "";
+   position: absolute;
+   display: block;
+   background-color: #111111;
+   height: 2px;
+   width: 0;
+   transition: width 0.3s;
 }
 
- .active-mobile{
+header a:hover::after{
+   width: 100%;
+}
+
+.menu-mobile{
    display: none;
 }
-
-#login-active{
-   display: none;
-} 
 
 @media (max-width:900px){
    .active-mobile{
@@ -60,8 +67,9 @@ header .login-cadastro{
       box-shadow: 0 4px #fff, 0 -4px #fff;
    }
 
-   #lista-menu{
-      display: none;
+   .lista-menu a{
+      font-size: 1.125rem;
+      gap: 30px;
    }
 
    main{
@@ -97,4 +105,34 @@ header .login-cadastro{
    #login-disabled{
       display: none;
    }
+}
+
+@media(max-width:800px){
+   .lista-menu{
+      display: none;
+   }
+   .menu-mobile{
+      padding: 7px 12px;
+      background-color: black;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'IBM Plex Mono', monospace; 
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 200;
+      cursor: pointer;
+   }
+   .menu-mobile::before{
+      margin-right: 4px;
+      content: "";
+      width: 15px;
+      height: 2px;
+      display: inline-block;
+      background-color: #fff;
+      box-shadow: 0 4px #fff, 0 -4px #fff;
+   }
+
 }

@@ -4,10 +4,22 @@
 @import 'home.css';
 @import 'sobre.css';
 @import 'modal.css';
+@import 'footer.css';
+@import 'utilitarios.css';
 
 /*Import das fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* Cores */
+:root{
+   --amarelo-principal:
+}
 
 

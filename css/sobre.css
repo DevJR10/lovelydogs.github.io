@@ -1,24 +1,21 @@
 .sobre-nos{
-   position: relative;
-   top: -100px;
+   margin-bottom: 80px;
 }
-
 .sobre-grid{
    align-items: center;
    gap: 50px;
    margin-bottom: 100px;
 }
 
-.titulo-sobre-nos{
-   max-width: 1050px;
-   margin: 0 auto;
-}
-
 .sobre-texto h2{
    font-weight: bold;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Poppins', sans-serif;
    font-size: 2.5rem;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
+}
+
+.sobre-texto p{
+   line-height: 1.4;
 }
 
 .sobre-grid img{
@@ -28,7 +25,7 @@
 }
 
 .porque-fazemos-isso{
-   grid-template-columns: 1fr auto;
+   grid-template-columns: 1fr auto !important;
 }
 
 .como-adotar{
@@ -46,9 +43,49 @@
    text-decoration: underline;
 }
 
-@media(max-width:950px){
+.somos-scroll{
+   opacity: 0;
+   transform: translate3d(-30px,0,0);
+   transition: 0.5s;
+}
+
+.somos-scroll.ativo-scroll{
+   opacity: 1;
+   transform: translate3d(0,0,0);
+}
+
+.porque-scroll{
+   opacity: 0;
+   transform: translate3d(-30px,0,0);
+   transition: 0.5s;
+}
+
+.porque-scroll.ativo-porque{
+   opacity: 1;
+   transform: translate3d(0,0,0);
+}
+
+.adotar-scroll{
+   opacity: 0;
+   transform: translate3d(-30px,0,0);
+   transition: 0.5s;
+}
+
+.adotar-scroll.ativo-adotar{
+   opacity: 1;
+   transform: translate3d(0,0,0);
+}
+@media(max-width:1000px){
    .sobre-nos{
-      top: -80px;
+      margin-top: 30px;
+   }
+
+   .sobre-texto h2{
+      font-size: 2rem !important;
+   }
+
+   .sobre-texto p{
+      font-size: 1.125rem !important;
    }
 
    .como-posso-adotar{
@@ -56,9 +93,8 @@
    }
 }
 
-@media(max-width:850px){
+@media (max-width:850px){
    .sobre-nos{
-      top: -70px;
       margin-bottom: 90px;
    }
 
@@ -68,14 +104,8 @@
       padding: 0 15px 0 15px;
    }
 
-   .sobre-grid h2{
-      text-align: start;
-      font-size: 2.2rem;
-   }
-
-   .sobre-nos p{
-      text-align: start;
-      font-size: 1.2rem;
+   .sobre-texto h2{
+      max-width: 750px;
    }
 
    .sobre-grid h2::before{
@@ -95,6 +125,17 @@
    }
 }
 
+@media(max-width:800px){
+   .sobre-nos h2{
+      width: max-content !important;
+      font-size: 2rem !important;
+   }
+
+   .sobre-nos p{
+      width: auto !important;
+   }
+}
+
 @media(max-width:650px){
    .sobre-nos{
       top: -60px;
@@ -110,7 +151,21 @@
 }
 
 @media(max-width:450px){
-   .sobre-nos{
-      top: -50px;
+   .sobre-grid h2::before{
+      content: '';
+      width: 20px;
+      height: 5px;
+      position: relative;
+      top: 0;
+      background-color: #FFB000;
+      display: block;
+      margin-right: 7px;
+   }
+   .sobre-texto h2{
+      font-size: 1.7rem !important;
+   }
+   .sobre-texto p{
+      width: auto;
+      font-size: 1.125rem !important;
    }
 }
