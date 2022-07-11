@@ -6,6 +6,7 @@
 }
 
 .home-layout{
+   justify-content: space-between;
    gap: 0 70px;
 }
 
@@ -62,43 +63,46 @@
    max-width: 600px;
    object-fit: cover;
    object-position: top;
-   align-self: flex-end;
-}
-
-#mulher-dog{
-   display: none;
 }
 
 @media(max-width:1200px){
+   .home-layout{
+      gap: 0;
+      align-items: flex-end !important;
+   }
    .amiguinho{
       padding-top: 30px;
    }
    .home-layout img{
-      width: 500px;
-      height: 500px;
+      width: 470px;
+      height: 470px;
      }
      .amiguinho h1{
-      font-size: 4rem;
-   }
-   .amiguinho span{
-      display: none;
+      font-size: 3.7rem;
    }
    .home-layout p{
       font-size: 1.125rem;
       max-width: 40ch;
       margin: 0;
    }
+   .home-layout img{
+      justify-self: end;
+   }
 }
 
 @media(max-width:1000px){
    .home-layout{
-      gap: 0 10px;
+      gap: 0 60px;
+   }
+   .amiguinho{
+      padding-top: 40px;
    }
    .home-layout img{
       width: 420px;
       height: 450px;
+      grid-column: 2;
       align-self: flex-end; 
-      justify-self: end;
+      justify-self: flex-end;
    }
    .amiguinho h1{
       font-size: 3rem;
@@ -113,7 +117,7 @@
 @media (max-width:900px){
    .home-layout{
       margin-bottom: 110px;
-      grid-template-columns: 1fr !important;
+      grid-template-columns: 1fr;
    }
    .amiguinho{
       padding-bottom: 100px;
@@ -121,13 +125,28 @@
    .amiguinho h1{
       width: auto;
    }
+   .home-layout img{
+      width: 370px;
+      height: 400px;
+   }
+}
 
+@media (max-width:800px){
+   .principal{
+      margin-bottom: 60px;
+   }
+   .home-layout{
+      display: block !important;
+   }
    .home-layout img{
       display: none;
    }
 }
 
 @media(max-width:600px){
+   .amiguinho{
+      padding-bottom: 50px;
+   }
    .amiguinho h1{
       font-size: 2.5rem;
    }
@@ -137,13 +156,13 @@
    }
 
    .botoes-amiguinho button{
-      padding: 8px 20px;
+      padding: 10px 20px;
    }
 }
 
 @media (max-width:450px){
-   .amiguinho{
-      padding-bottom: 50px;
+   .principal{
+      margin-bottom: 60px;
    }
    .amiguinho h1{
       width: auto;
@@ -152,37 +171,15 @@
    }
    .amiguinho p{
       width: auto;
-      font-size: 1rem;
+      font-size: 1.125rem;
    }
    .menu-mobile{
-      font-size: 0.8rem;
+      font-size: 1rem;
    }
    .botoes-amiguinho button{
       align-items: flex-start;
       font-size: 0.9rem;
-      padding: 8px 10px;
+      padding: 10px 14px;
    }
 }
-
-/* @media (max-width:370px){
-   .botoes-amiguinho{
-      display: flex;
-      justify-content: space-between;
-   }
-
-   .botoes-amiguinho button{
-      padding: 5px 15px;
-   }
-}
-
-@media (max-width:350px){
-   .botoes-amiguinho{
-      display: flex;
-      justify-content: space-between;
-   }
-
-   .botoes-amiguinho button{
-      padding: 5px 10px;
-   }
-} */
 

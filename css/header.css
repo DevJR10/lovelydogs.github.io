@@ -33,8 +33,21 @@ header a::after{
    transition: width 0.3s;
 }
 
+header #home::after{
+   content: "";
+   position: absolute;
+   display: block;
+   background-color: #111111;
+   height: 2px;
+   width: 100%;
+}
+
 header a:hover::after{
    width: 100%;
+}
+
+header a:hover + header #home::after{
+   width: 0;
 }
 
 .menu-mobile{

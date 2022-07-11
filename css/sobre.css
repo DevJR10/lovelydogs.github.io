@@ -15,7 +15,7 @@
 }
 
 .sobre-texto p{
-   line-height: 1.4;
+   line-height: 1.5;
 }
 
 .sobre-grid img{
@@ -76,36 +76,43 @@
    transform: translate3d(0,0,0);
 }
 @media(max-width:1000px){
-   .sobre-nos{
-      margin-top: 30px;
-   }
-
    .sobre-texto h2{
-      font-size: 2rem !important;
+      font-size: 2rem;
+      margin-bottom: 12px;
    }
 
    .sobre-texto p{
-      font-size: 1.125rem !important;
-   }
-
-   .como-posso-adotar{
-      align-items: center;
+      font-size: 1.125rem;
    }
 }
 
 @media (max-width:850px){
    .sobre-nos{
-      margin-bottom: 90px;
+      margin-bottom: 50px;
    }
 
    .sobre-grid{
       margin: 50px 0 0 0;
       grid-template-columns: 1fr;
+      display: block !important;
       padding: 0 15px 0 15px;
+   }
+
+   .texto{
+      display: block;
+      text-align: center;
+      padding: 0 15px;
+      max-width: 1100px;
+      margin: 0 auto;
    }
 
    .sobre-texto h2{
       max-width: 750px;
+      margin-bottom: 10px;
+   }
+
+   .sobre-texto p{
+      text-align: justify;
    }
 
    .sobre-grid h2::before{
@@ -120,6 +127,18 @@
       margin-bottom: 4px;
    }
 
+   .sobre-grid h2::after{
+      content: '';
+      width: 20px;
+      height: 5px;
+      position: relative;
+      bottom: 5px;
+      background-color: yellow;
+      display: inline-block;
+      margin-left: 7px;
+      margin-bottom: 4px;
+   }
+
    .sobre-grid img{
       display: none;
    }
@@ -127,26 +146,25 @@
 
 @media(max-width:800px){
    .sobre-nos h2{
-      width: max-content !important;
-      font-size: 2rem !important;
+      font-size: 2rem;
    }
-
-   .sobre-nos p{
-      width: auto !important;
+   .sobre-texto p{
+      margin: 0 auto;
    }
 }
 
 @media(max-width:650px){
    .sobre-nos{
-      top: -60px;
+      margin-bottom: 60px;
    }
 
    .sobre-nos h2{
-      font-size: 2rem;
+      font-size: 1.8rem;
    }
 
    .sobre-nos p{
-      font-size: 1.1rem;
+      text-align: justify;
+      font-size: 1.125rem;
    }
 }
 
@@ -161,11 +179,13 @@
       display: block;
       margin-right: 7px;
    }
-   .sobre-texto h2{
-      font-size: 1.7rem !important;
+   .texto p{
+      text-align: justify;
+      font-size: 1.1rem;
    }
-   .sobre-texto p{
-      width: auto;
-      font-size: 1.125rem !important;
+   .sobre-texto h2{
+      width: max-content;
+      text-align: start;
+      font-size: 1.7rem;
    }
 }
