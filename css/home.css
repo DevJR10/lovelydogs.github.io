@@ -1,13 +1,18 @@
 .principal{
-   background-color: #FFB000;
+   background-color: #F7A310;
    position: relative;
-   margin-bottom: 110px;
    padding-top: 10px;
 }
 
 .home-layout{
    justify-content: space-between;
    gap: 0 70px;
+   padding: 0 15px;
+   max-width: 1100px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
 }
 
 .amiguinho{
@@ -25,31 +30,34 @@
    position: relative;
 }
 
-/* .amiguinho span{
+.amiguinho h1::before{
+   content: "";
+   display: block;
+   width: 200px;
+   height: 200px;
    background-color: #ffffff;
-   width: 210px;
-   height: 210px;
    border-radius: 100%;
-   position: absolute; 
-   top: 30px;
-   left: calc(100% - 95%);
-} */
+   position: absolute;
+   z-index: -1;
+   top: -30px;
+   left: -30px;
+}
 
 .amiguinho button{
-   margin-top: 20px;
-   background-color:#05bed3;
+   margin-top:25px;
+   background-color:#13203D;
    padding: 12px 25px;
    margin-right: 30px;
    font-size: 1.07rem;
-   color: #000000;
-   font-family: 'Open Sans', sans-serif;
+   color: #E5E5E5;
+   font-family: 'Poppins', sans-serif; 
    border-radius: 5px;
    transition: 0.3s;
 }
 
 .amiguinho button:hover{
    cursor: pointer;
-   background-color:#07d4eb;
+   background-color:#1b2e57;
 }
 
 .home-layout p{
@@ -65,6 +73,10 @@
    object-position: top;
 }
 
+#mulher-dog{
+   display: none;
+}
+
 @media(max-width:1200px){
    .home-layout{
       gap: 0;
@@ -74,11 +86,17 @@
       padding-top: 30px;
    }
    .home-layout img{
-      width: 470px;
-      height: 470px;
-     }
+      width: 500px;
+      height: 500px;
+   }
      .amiguinho h1{
-      font-size: 3.7rem;
+      font-size: 4.2rem;
+   }
+   .amiguinho h1::before{
+      width: 170px;
+      height: 170px;
+      left: -20px;
+      top: -20px;
    }
    .home-layout p{
       font-size: 1.125rem;
@@ -107,6 +125,12 @@
    .amiguinho h1{
       font-size: 3rem;
    }
+   .amiguinho h1::before{
+      width: 150px;
+      height: 150px;
+      left: -10px;
+      top: -30px;
+   }
    .home-layout p{
       font-size: 1.1rem;
       max-width: 40ch;
@@ -116,14 +140,24 @@
 
 @media (max-width:900px){
    .home-layout{
-      margin-bottom: 110px;
       grid-template-columns: 1fr;
    }
    .amiguinho{
+      position: relative;
+      top: 20px;
       padding-bottom: 100px;
    }
    .amiguinho h1{
       width: auto;
+   }
+   .amiguinho h1::before{
+      width: 150px;
+      height: 150px;
+      left: -10px;
+      top: -30px;
+   }
+   .amiguinho button{
+      padding: 10px 18px;
    }
    .home-layout img{
       width: 370px;
@@ -132,14 +166,37 @@
 }
 
 @media (max-width:800px){
-   .principal{
-      margin-bottom: 60px;
-   }
    .home-layout{
-      display: block !important;
+      margin-bottom: 0;
+      grid-template-columns: 1fr !important;
+   }
+   .amiguinho{
+      padding-top: 60px;
+      padding-bottom: 100px;
    }
    .home-layout img{
       display: none;
+   }
+   .amiguinho h1{
+      max-width: 644px;
+      font-size: 4rem;
+   }
+   .amiguinho h1::before{
+      width: 160px;
+      height: 160px;
+      left: -10px;
+      top: -20px;
+   }
+   #mulher-dog{
+      display: none;
+      text-align: center;
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: top;
+      grid-row: 2;
+      grid-column: 1;
    }
 }
 
@@ -148,7 +205,8 @@
       padding-bottom: 50px;
    }
    .amiguinho h1{
-      font-size: 2.5rem;
+      font-size: 4rem;
+      width: auto;
    }
 
    .amiguinho p{
@@ -161,13 +219,27 @@
 }
 
 @media (max-width:450px){
-   .principal{
-      margin-bottom: 60px;
+   .amiguinho{
+      padding-top: 40px;
+      padding-bottom: 110px;
    }
    .amiguinho h1{
       width: auto;
-      font-size: 2rem;
+      font-size: 4rem;
       margin-bottom: 20px;
+      position: relative;
+   }
+   .amiguinho h1::before{
+      content: "";
+      display: block;
+      width: 130px;
+      height: 130px;
+      background-color: #ffffff;
+      border-radius: 100%;
+      position: absolute;
+      z-index: -1;
+      top: -5px;
+      left: -12px;
    }
    .amiguinho p{
       width: auto;

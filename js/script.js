@@ -17,7 +17,7 @@ linksInternos.forEach((link) => {
 
 //Animação ao scroll = Quem Somos
 const sectionQuemSomos = document.querySelectorAll('.somos-scroll')
-const windowMetade = window.innerHeight * 0.85
+const windowMetade = window.innerHeight * 0.95
 
 function scroll(){
     sectionQuemSomos.forEach((item) => {
@@ -32,7 +32,7 @@ window.addEventListener('scroll', scroll)
 
 //Animação ao scroll = Por que fazemos isso
 const sectionPqFazemos = document.querySelectorAll('.porque-scroll')
-const windowFazemos = window.innerHeight * 0.9
+const windowFazemos = window.innerHeight * 0.95
 
 function scrollPorque(){
    sectionPqFazemos.forEach((item) => {
@@ -48,7 +48,7 @@ window.addEventListener('scroll', scrollPorque)
 
 //Animação ao scroll = Adotar
 const sectionAdotar = document.querySelectorAll('.adotar-scroll')
-const windowAdotar = window.innerHeight * 0.9
+const windowAdotar = window.innerHeight * 0.95
 
 function scrollAdotar(){
    sectionAdotar.forEach((item) => {
