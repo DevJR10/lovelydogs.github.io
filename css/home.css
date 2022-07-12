@@ -1,5 +1,5 @@
 .principal{
-   background-color: #F7A310;
+   background-color: #FFDB15;
    position: relative;
    padding-top: 10px;
 }
@@ -45,7 +45,7 @@
 
 .amiguinho button{
    margin-top:25px;
-   background-color:#13203D;
+   background-color:#3F5E98;
    padding: 12px 25px;
    margin-right: 30px;
    font-size: 1.07rem;
@@ -200,32 +200,14 @@
    }
 }
 
-@media(max-width:600px){
-   .amiguinho{
-      padding-bottom: 50px;
-   }
-   .amiguinho h1{
-      font-size: 4rem;
-      width: auto;
-   }
-
-   .amiguinho p{
-      font-size: 1.1rem;
-   }
-
-   .botoes-amiguinho button{
-      padding: 10px 20px;
-   }
-}
-
 @media (max-width:450px){
    .amiguinho{
       padding-top: 40px;
-      padding-bottom: 110px;
+      padding-bottom: 120px;
    }
    .amiguinho h1{
       width: auto;
-      font-size: 4rem;
+      font-size: 4.3rem;
       margin-bottom: 20px;
       position: relative;
    }
