@@ -5,9 +5,9 @@ body{
    overflow-x: hidden;
 }
 
-h1,h2{
+h1,h2,h3{
    margin: 0;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 p,a{
@@ -20,4 +20,9 @@ p,a{
 
 li{
    list-style: none;
+}
+
+img{
+   max-width: 100%;
+   max-height: 100%;
 }

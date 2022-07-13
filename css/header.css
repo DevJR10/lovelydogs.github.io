@@ -1,5 +1,5 @@
 header{
-   background-color: #FFDB15;
+   background-color: var(--amarelo-principal);
 }
 
 header .menu{ 
@@ -92,7 +92,7 @@ header a:hover + header #home::after{
    #lista-menu.ativo{
       display: block;
       position: absolute;
-      background-color: #FBFB73;
+      background-color: var(--amarelo-principal);
       right:0;
       top: 0;
       width: 150px;
