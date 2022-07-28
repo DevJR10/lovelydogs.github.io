@@ -3,6 +3,7 @@
    padding-bottom: 9.5rem;
    position: relative;
     z-index: 5;
+    overflow-x: hidden;
 }
 
 .bg-ganhamos{

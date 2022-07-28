@@ -1,6 +1,7 @@
 .contato-bg{
    max-width: 1200px;
    margin: 60px auto 0 auto;
+   overflow-x: hidden;
 }
 
 .contato-grid > h2{

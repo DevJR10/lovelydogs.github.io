@@ -1,5 +1,6 @@
 //Scroll suave
 const linksInternos = document.querySelectorAll('.menu nav a[href^="#"]')
+const linksFooter = document.querySelectorAll('.footer-lista ul li a[href^="#"]')
 
 function scrollSobre(event){
     event.preventDefault()
@@ -13,6 +14,10 @@ function scrollSobre(event){
 
 linksInternos.forEach((link) => {
     link.addEventListener('click', scrollSobre);
+});
+
+linksFooter.forEach((link) => {
+   link.addEventListener('click', scrollSobre);
 });
 
 //Animação ao scroll = Quem Somos

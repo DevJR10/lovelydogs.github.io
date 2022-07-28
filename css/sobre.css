@@ -1,6 +1,8 @@
 .sobre-bg{
    background-color: var(--fundo);
    padding-top: 110px;
+   overflow-x: hidden;
+
 }
 
 .sobre-nos{
