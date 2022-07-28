@@ -57,7 +57,6 @@
 }
 
 .contato-grid form{
-   max-width: 1000px;
    display: flex;
    flex-direction: column;
    border-radius: 7px;
@@ -67,9 +66,9 @@
    font-family: 'Poppins', sans-serif;
    outline: none;
    display: block;
-   width: auto;
+   width: 100%;
    border: transparent;
-   padding: 20px;
+   padding: 20px 0;
    border-bottom: 2px solid var(--preto);
    margin-bottom: 20px;
    font-size: 1.1rem;
@@ -81,9 +80,20 @@
    outline: none;
    font-size: 1.1rem;
    border: none;
+   width: 100%;
    border-bottom: 2px solid var(--preto);
    font-family: 'Poppins', sans-serif;
-   padding: 20px;
+   padding: 20px 0;
+}
+
+.contato-grid form button{
+   margin-top: 20px;
+   font-family: 'Open Sans', sans-serif;
+   background-color: var(--amarelo-principal);
+   display: inline-block;
+   font-size: 1.025rem;
+   padding: 12px 50px;
+   border-radius: 10px;
 }
 
 @media (max-width:800px){
@@ -134,34 +144,12 @@
    }
    .contato-form form input{
       font-size: 1rem;
-      justify-content: flex-start;
-      padding-left: 0;
-      max-width: ;
-      padding-right: 10px;
    }
    .contato-form form textarea{
       font-size: 1rem;
-      padding-left: 0;
-      padding-right: 10px;
-      justify-content: start;
-      padding: 10px;
    }
    .contato-form .img-contato2 img{
       max-width: 25px;
       max-height: 25px;
-   }
-}
-
-@media(max-width:380px){
-   .contato-form form input{
-      max-width: 225px;
-   }
-   .contato-form form textarea{
-      max-width:210px;
-   }
-   .img-contato2{
-      display: flex;
-      justify-content: space-around;
-      gap: 40px;
    }
 }
