@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teste</title>
+    <title>LovelyDog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/icone/favicon.ico" type="image/x-icon">
 </head>
 
     <header>
-        <div class="menu">
+        <div class="menu" id="menu">
             <h1>LovelyDog</h1>
 
             <nav class="lista-menu">
@@ -32,8 +33,8 @@
                 <h1>Encontre um amigo fiel</h1><span></span>
                 <p>Somos uma plataforma intermediária que com parcerias de ONG'S, ajudamos você a encontrar um novo melhor amigo para alegrar o seu dia a dia.</p>
                 <div class="botoes-amiguinho">
-                  <button>Saiba mais</button>
-                  <button>Contato</button>
+                  <button>Quero adotar</button>
+                  <button>Quero doar</button>
                 </div>
             </div>
 
@@ -46,7 +47,7 @@
     <article class="sobre-bg">
       <section class="sobre-nos o-que-somos" id="sobre">
          <div class="grid-padrao sobre-grid">
-            <img src="imgs/dog curioso.jpg" alt="">
+            <img src="imgs/dog.curioso.png" alt="">
             
                <div class="sobre-texto texto o-que-somos-texto somos-scroll">
                   <h2 id="titulo">O que nós somos?</h2>
@@ -64,7 +65,7 @@
                   <p>Nós sabemos o quanto de cachorrinhos estão em estado de abandono e situações de ruas, por isso, sentimos que o nosso dever é salvar a vida desses animais e levarmos alegrias para as pessoas com um novo companheiro(a). Além do mais, nós incentivamos a adoção de cachorros e não a compra deles.</p>
                </div>
 
-               <img src="imgs/dog.fazemos-isso.jpg" alt="">
+               <img src="imgs/dog.fazemos-isso.png" alt="">
             </div>   
          </section>
 
@@ -72,7 +73,7 @@
 
          <div class="grid-padrao sobre-grid como-posso-adotar">
          
-            <img src="imgs/dog como-adotar.jpg" alt="">
+            <img src="imgs/dog.como-adotar.png" alt="">
 
             <div class="sobre-texto texto adotar-scroll">
                <h2>Como posso adotar?</h2>
@@ -85,7 +86,7 @@
    <section class="sc-motivos">
 
       <article class="motivos-bg">
-         <div class="motivos-grid">
+         <div class="motivos-grid scroll-motivos">
 
             <img src="imgs/ssss-min-removebg (1).png" alt="">
             
@@ -97,7 +98,7 @@
          </div>
       </article>
 
-      <article class="motivos-razoes-bg">
+      <article class="motivos-razoes-bg" id="razoes-js">
          <div class="motivos-razoes">
             <div class="razoes">
                <img src="imgs/osso-de-cao.png" alt="">
@@ -124,11 +125,93 @@
             </div>
          </div>
       </article>
-
    </section>
+   
+      <article class="sc-ganhamos">
+         <div class="bg-ganhamos"></div>
+         <div class="ganhamos-grid scroll-ganhamos">
+            <div class="ganhamos-texto">
+               <h2>Nós não ganhamos nada com isso</h2>
+               <p>Nós criadores e desenvolvedores da LovelyDogs não recebemos nenhum tipo de lucro financeiro pelo site, fazemos isso porque a nossa missão é ajudar os cachorros abandonados.<br><br> Mas você pode nos ajudar divulgando nossas redes sociais para que cada vez mais novas pessoas conheçam nosso projeto.</p>
+               <a class="btn-doe1" href="">Doe</a>
+            </div>
 
+            <div class="sociais-ganhamos">
+               <a class="btn-doe2" href="">Doe</a>
+               
+               <div class="img-social">
+                  <img src="icones/instagram.png" alt="">
+                  <img class="face" src="icones/facebook.png" alt="">
+                  <img src="icones/twitter.png" alt="">
+               </div>
+            </div>
+         </div>
+      </article>
 
+      <article class="time-bg">
+         <div class="time-grid grid-padrao">
+            <img src="imgs/time.png" alt="">
 
+            <div class="time-texto">
+               <h2>Conheça o nosso time</h2>
+               <p>Essas são as pessoas que faça chuva ou faça sol, estão lutando para tornar o mundo um lugar melhor com mais amor.</p>
+            </div>
+         </div>
+      </article>
+
+      <article class="contato-bg">
+         <div class="contato-grid">
+               <h2>Contate-nos</h2>
+
+            <div class="contato-form">
+               <div class="contato-texto">
+                  <p>Deixe nos saber suas dúvidas, sugestões e preocupações preenchendo o formulário ao lado. Isso é muito importante para nós.</p>
+                  <img class="face-contato" src="icones/facebook.svg" alt="">
+                  <img src="icones/instagram.svg" alt="">
+                  <img src="icones/twitter.svg" alt="">
+               </div>
+
+               <form action="">
+                  <input type="text" id="nome" name="nome" placeholder="Nome">
+                  <input type="email" id="email" name="email" placeholder="Email">
+                  <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Escreva aqui"></textarea>
+               </form>
+            </div>
+         </div>
+      </article>
+
+      <footer class="footer">
+         <div class="footer-grid">
+            <div class="logo">
+               <img src="imgs/instituto.webp" alt="">
+            </div>
+
+            <div class="footer-texto">
+               <h3>Menu</h3>
+               <div class="footer-lista">
+                  <ul class="p-li">
+                     <li>Home</li>
+                     <li>Sobre nós</li>
+                     <li>Adote</li>
+                  </ul>
+
+                  <ul>
+                     <li>Cadastro</li>
+                     <li>Doe</li>
+                     <li>Contato</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="final-footer">
+            <h3>©Todos os direitos reservados, 2022.</h3>
+
+         <span>Feito com carinho por <a target="_blank" href="https://devjr10.github.io/joaorodrigo.github.io/">JR</a>💗</span>
+
+            <a class="voltar-topo" href="#menu">Voltar ao topo ↑</a>
+         </div>
+      </footer>
 
 
     <section class="modal-container" data-modal="container">

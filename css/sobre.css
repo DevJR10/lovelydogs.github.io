@@ -1,10 +1,10 @@
 .sobre-bg{
+   background-color: var(--fundo);
    padding-top: 110px;
 }
 
 .sobre-nos{
-   padding-bottom: 90px;
-   margin-bottom: 50px;
+   margin-bottom: 130px;
 }
 .sobre-grid{
    align-items: center;
@@ -13,15 +13,16 @@
 }
 
 .section-adotar{
-   padding-bottom: 60px;
+   margin-bottom: 100px;
 }
 
 .sobre-texto h2{
    font-weight: bold;
    font-family: 'Poppins', sans-serif;
-   font-size: 3.5rem;
+   font-size: 3rem;
    margin-bottom: 20px;
    line-height: 1.4;
+   width: max-content;
 }
 
 .sobre-texto p{
@@ -56,7 +57,7 @@
 .somos-scroll{
    opacity: 0;
    transform: translate3d(30px,0,0);
-   transition: 0.5s;
+   transition: 0.7s;
 }
 
 .somos-scroll.ativo-scroll{
@@ -67,7 +68,7 @@
 .porque-scroll{
    opacity: 0;
    transform: translate3d(-30px,0,0);
-   transition: 0.5s;
+   transition: 0.7s;
 }
 
 .porque-scroll.ativo-porque{
@@ -78,7 +79,7 @@
 .adotar-scroll{
    opacity: 0;
    transform: translate3d(30px,0,0);
-   transition: 0.5s;
+   transition: 0.7s;
 }
 
 .adotar-scroll.ativo-adotar{
@@ -87,6 +88,7 @@
 }
 @media(max-width:1000px){
    .sobre-texto h2{
+      width: auto;
       font-size: 2rem;
       margin-bottom: 12px;
    }

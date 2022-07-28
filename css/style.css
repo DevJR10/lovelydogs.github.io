@@ -7,6 +7,9 @@
 @import 'footer.css';
 @import 'utilitarios.css';
 @import 'motivos.css';
+@import 'ganhamos.css';
+@import 'time.css';
+@import 'contato.css';
 
 /*Import das fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -20,7 +23,10 @@
 /* Cores */
 :root{
    --amarelo-principal:#EDB506;
-   --cor-secundaria:
+   --cor-secundaria: #27A8AD;
+   --branco: #ffffff;
+   --preto:#000000;
+   --cinza:#f1f3eb;
 }
 
 
