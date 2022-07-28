@@ -125,10 +125,18 @@
 }
 
 @media(max-width:450px){
+   .contato-form{
+      max-width: auto;
+   }
+   .contato-texto p{
+      width: 250px;
+      font-size: 1.1rem;
+   }
    .contato-form form input{
       font-size: 1rem;
       justify-content: flex-start;
       padding-left: 0;
+      max-width: ;
       padding-right: 10px;
    }
    .contato-form form textarea{
@@ -139,7 +147,21 @@
       padding: 10px;
    }
    .contato-form .img-contato2 img{
-      max-width: 30px;
-      max-height: 30px;
+      max-width: 25px;
+      max-height: 25px;
+   }
+}
+
+@media(max-width:380px){
+   .contato-form form input{
+      max-width: 225px;
+   }
+   .contato-form form textarea{
+      max-width:210px;
+   }
+   .img-contato2{
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
    }
 }
