@@ -156,3 +156,9 @@ function voltar(event){
 voltarTopo.forEach((link) => {
    link.addEventListener('click', voltar);
 });
+
+//Onclick btn form
+const btn_form = document.getElementById('btn-enviar')
+function btnClick(){
+   btn_form.innerText = 'Aguarde.'
+}

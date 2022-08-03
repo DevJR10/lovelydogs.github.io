@@ -97,6 +97,10 @@
    border-radius: 10px;
 }
 
+.contato-grid form button:hover{
+   cursor: pointer;
+}
+
 @media (max-width:800px){
    .contato-form{
       border-radius: 7px;
