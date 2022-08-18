@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teste</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/bootstrap.css"> -->
+    <link rel="stylesheet" href="../css/lista-animais/style.css">
 </head>
 <header>
-        <div class="menu">
+        <div class="menu" id="menu">
             <h1>LovelyDog</h1>
-            <nav id="lista-menu">
-               <ul>
-                  <a href="index.html">Home</a>
-                  <a href="formanimal.html">Cadastro de Animais </a>
-                  <a href="logout.php">Sair</a>
 
-            
+            <nav class="lista-menu">
+               <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html">Sobre nós</a></li>
+                  <li><a href="../formanimal.html">Cadastrar animal</a></li>
+                  <li><a href="#">Contato</a></li>
                </ul>
             </nav>
 
-<button class="active-mobile">Menu</button>
+            <button class="menu-mobile">Menu</button>
         </div>
     </header>
 <?php
@@ -41,41 +40,30 @@ else{
 */
 
 ?>
-        <div class="container">
-        <h1 align="center">Animais</h1>
-        <table class="table table-active table-bordered table-striped">
+        <h1 class="painel-controle">Painel de controle - Animais</h1>
+        <div class="container-lista">
   <?php
   $animais=listaAnimais($conexao);
   foreach ($animais as $animal):
    ?>
-            <tr>
-                <td><?=$animal['idanimal']?></td>
-                <td><?=$animal['nome']?></td>
-                <td><?=$animal['sexo']?></td>
-                 <td><?=$animal['raca']?></td>
-                <td><?=$animal['idade']?></td>
-                <td><?=$animal['pelagem']?></td>
-                <td><?=$animal['imagem_pet']?></td>
-                <td><?=$animal['porte']?></td>
-                <td><?=$animal['castrado']?></td>
-                <td><?=$animal['vacina']?></td>
-                <td><?=$animal['observacoes']?></td>
+            <div class="card-dog">
+               <p><?=ucfirst($animal['nome'])?></p>
+            
+               <img id="img_pet" src="upload/<?=$animal['imagem_pet']?>" height="200" width="300">
 
 
+               <div class="btn-card">
+                  <form action="formanimal-alterar.php" method="post">
+                     <input type="hidden" id="id" name="id" value="<?=$animal['idanimal']?>">
+                     <button>Alterar</button>
+                  </form>
 
-
-                <td><form action="animal-excluir.php" method="post">
-                    <input type="hidden" name="id" value="<?=$animal['idanimal']?>">
-                    <button class="btn-danger">Excluir</button>
-                    </form>
-                </td>
-                
-                 <td><form action="formanimal-alterar.php" method="post">
-                    <input type="hidden" name="idanimal" value="<?=$animal['idanimal']?>">
-                    <button class="btn-primary">Alterar</button>
-                   </form>
-                </td>
-            </tr>
+                  <form action="animal-excluir.php" method="post">
+                     <input type="hidden" id="id" name="id" value="<?=$animal['idanimal']?>">
+                     <button>Excluir</button>
+                  </form>
+               </div>
+            </div>          
  <?php
   endforeach;
  ?>     

@@ -11,6 +11,14 @@
 @import 'time.css';
 @import 'contato.css';
 
+
+/* Import login */
+@import '../css/login/header-login.css';
+@import '../css/login/main-login.css';
+
+@import '../css/lista-animais/alterar.css';
+
+
 /*Import das fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
@@ -22,7 +30,7 @@
 
 /* Cores */
 :root{
-   --amarelo-principal:#EDB506;
+   --amarelo-principal:#FCCC05;
    --cor-secundaria: #27A8AD;
    --branco: #ffffff;
    --preto:#000000;

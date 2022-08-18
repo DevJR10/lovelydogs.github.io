@@ -1,7 +1,7 @@
 <?php
 include("conexao.php");
 include("animal-banco.php");
-$idanimal=$_POST['idanimal'];
+$idanimal=$_POST['id'];
 $animal= buscaAnimal($conexao, $idanimal);
 
 //session_start();
@@ -20,23 +20,39 @@ $animal= buscaAnimal($conexao, $idanimal);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo-animal.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo-animal.css">
     <title>cadastro animal</title>
 </head>
 <body>
-    <h1>ALterar cadastro de animais</h1>
+<header>
+        <div class="menu" id="menu">
+            <h1>LovelyDog</h1>
+
+            <nav class="lista-menu">
+               <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html">Sobre nós</a></li>
+                  <li><a href="../formanimal.html">Cadastrar animal</a></li>
+                  <li><a href="animal-lista.php">Minha lista</a></li>
+                  <li><a href="../index.html#contato">Contato</a></li>
+               </ul>
+            </nav>
+
+            <button class="menu-mobile">Menu</button>
+        </div>
+    </header>
+    <h1>Painel de controle - Alteração de cadastro</h1>
     <div id="formulario">
     <form method="post" action="animal-alterar.php">
     <div class="row">
     <div class="col-md-5">
 
-    <input type="hidden" name="idanimal" value="<?=$animal['idanimal']?>">
+    <input type="hidden" id="id" name="id" value="<?=$animal['idanimal']?>">
 
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" value="<?=$animal['nome']?>">
-                
-
+               
 
             <label for="sexo" class="form-label">Sexo</label>
               
@@ -92,22 +108,17 @@ $animal= buscaAnimal($conexao, $idanimal);
                 <label for="vacina" class="form-label">Vacinas</label><br>
                 <textarea rows="2"  cols="40" class="form-control" id="vacina" name="vacina"><?=$animal['vacina']?></textarea>
             
-               
+                Imagem: <input type="file" required name="imagem" id="imagem">             
              
                 <label for="obs" class="form-label">Observações</label><br>
                 <textarea rows="4"  cols="40" class="form-control" id="obs" name="observacoes"><?=$animal['observacoes']?></textarea>
             
             </div>
-            </div>
-            <br>
-    
+      </div>   
 
             <div class="botao">
-              <button type="submit" class="btn btn-secundary">Voltar</button>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit">Enviar</button>
             </div>
-            
-            
 
           </form>
         </div>

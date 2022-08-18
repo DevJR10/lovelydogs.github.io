@@ -20,11 +20,11 @@ if($_POST){
        $consulta=buscaUsuario($conexao, $email, $senha);
        $_SESSION['nome']= $consulta['nome'];
        $_SESSION['log']='ativo';
-       header("Location:principal.php");
+       header("Location:../php/animal-lista.php");
 
     }else{
         echo "Usuario ou senha inválida<br>";
-        echo "<a href='index.html'>Voltar para a tela de login</a><br>";
+        echo "<a href='../pagina-login.html'>Voltar para a tela de login</a><br>";
     }
 }
 ?>

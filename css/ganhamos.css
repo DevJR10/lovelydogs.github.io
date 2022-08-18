@@ -7,7 +7,7 @@
 }
 
 .bg-ganhamos{
-   background-image:url(https://images.unsplash.com/photo-1600077106724-946750eeaf3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+   background-image:url(../imgs/dog-ganhamos.png);
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: cover;
@@ -72,10 +72,21 @@
    border-radius: 10px;
 }
 
-.sociais-ganhamos img{
+.img-social{
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   flex-direction: column;
+}
+.sociais-ganhamos img{  
   padding: 0 15px;
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.face{
+   max-width: 20px !important;
+   max-height: 30px !important;
 }
 
 .sociais-ganhamos img:hover{
